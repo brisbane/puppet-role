@@ -1,0 +1,34 @@
+class role::pp_client {
+
+include 'common'
+#mounts
+include 'yumbase'
+include 'gridrepo'
+
+include 'pp_client::mounts'
+#kashif does this now
+#include "pp_client::misc" 
+include "pp_client::security" 
+
+#Monitoring
+include "ganglia::client"
+include collectl
+
+#Auth
+include nis::client
+
+#Commented out so that I dont start trying to mount 1.8 servers with 2.1 clients.  Try again post upgrade.
+class { 'lustre_client': }
+#this line can go in as many times as you like
+ensure_packages ( ['nfs-utils'] )
+class { 'rsyslog' : }
+class { 'afs::client' : }
+class { 'pp_client::tunenfs' : }
+include nrpe
+####This ordering is important, and this is why we have to have cvmfs if we want the data directories?
+include cvmfs
+include pp_client::local_datadirs
+####
+include 'ssh'
+
+}
