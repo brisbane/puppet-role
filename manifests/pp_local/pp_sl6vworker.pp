@@ -1,10 +1,10 @@
-class role::pp_local::pp_sl6worker {
+class role::pp_local::pp_sl6vworker {
 
   include 'applypolicy::policy::ppsoftware'
   include 'applypolicy::policy::autofsnocvmfs'
   include 'applypolicy::policy::staticusernode'
   include systemtap
-#  include nagios
+  include nagios
 
   class { 'torque::mom' : }
   file { '/scratch' : 

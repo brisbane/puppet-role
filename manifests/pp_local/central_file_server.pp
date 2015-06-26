@@ -4,4 +4,5 @@ class role::pp_local::central_file_server {
     include "mydell"
     include "smb::server"
     include "kerberos"
+    include "ox_local_repo"
 }

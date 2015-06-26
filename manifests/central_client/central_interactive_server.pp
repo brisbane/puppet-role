@@ -1,4 +1,4 @@
-class role::central::central_interactive_server {
+class role::central_client::central_interactive_server {
 
   include applypolicy::policy::ppsoftware
   include applypolicy::policy::localize_particle

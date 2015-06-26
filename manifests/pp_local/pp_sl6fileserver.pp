@@ -5,6 +5,7 @@ class role::pp_local::pp_sl6fileserver {
     include "mydell"
     include "smb::server"
     include "kerberos"
+    include ox_local_repo
     include "mail"
 }
 

@@ -3,4 +3,5 @@ class role::grid::arc_server {
 	include htcondor
         include setup_grid_accounts
         include arc_ce
+        include arc_local
 }

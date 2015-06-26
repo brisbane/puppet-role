@@ -4,8 +4,9 @@ class role::grid::grid_wn  {
  include  yaim_conf::wlcg_voms
  include torque::mom
  include grid_worker
+ include cvmfs_simple
 # include nfsclient
- include cvmfs
+# include cvmfs
 
 
 }

@@ -10,7 +10,6 @@ ensure_packages ( ['yum-utils'] )
    include 'applypolicy::policy::staticclient'
    include 'applypolicy::policy::centralclient'
    include 'applypolicy::policy::physics'
-
-
+include 'sudo'
 }
 

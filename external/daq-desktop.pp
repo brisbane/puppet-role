@@ -3,4 +3,5 @@ class role::external::daq_desktop {
   include "yumbase"
   include user_software::graphical_console
   include user_software::interactive
+#  include nagios
 }

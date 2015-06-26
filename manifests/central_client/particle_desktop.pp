@@ -1,4 +1,4 @@
-class role::central::particle_desktop {
+class role::central_client::particle_desktop {
   include user_software::graphical_console
 
   include applypolicy::policy::ppsoftware
@@ -7,4 +7,5 @@ class role::central::particle_desktop {
   include 'applypolicy::policy::interactive'
   include 'applypolicy::policy::autofsnocvmfs'
   include smb::client
+  include nagios
 }

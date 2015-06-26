@@ -10,6 +10,8 @@ include ssh
 include egi_trustanchor
 include ganglia::client
 include grid_repos
+include rsyslog
+#include hardware_check
 # Temporary place until moved to some other module
 # $package_list = ["wlcg-voms-alice","wlcg-voms-atlas", "wlcg-voms-cms", "wlcg-voms-lhcb", "wlcg-voms-ops"]
 # package { $package_list : ensure => installed,}

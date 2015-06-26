@@ -1,1 +1,1 @@
-class role::central_client_base
+class role::central_client_base (){}
