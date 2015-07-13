@@ -1,5 +1,5 @@
 class role::grid::grid_wn  {
- include nrpe
+# include nrpe
  class {'yaim_conf' : service_type => 'wn' }
  include  yaim_conf::wlcg_voms
  include torque::mom

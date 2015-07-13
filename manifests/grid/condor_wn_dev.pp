@@ -7,6 +7,5 @@ class role::grid::condor_wn_dev {
 #      include nfsclient
       include cvmfs
       include grid_repos
-      include nagios
       include cvmfs_auto_nagios
 }

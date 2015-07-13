@@ -10,6 +10,5 @@ class role::grid::condor_wn {
       include cvmfs_auto_nagios
       include cvmfs_simple
 #      include cvmfs
-      include nagios
       include hardware_check
 }

@@ -5,6 +5,5 @@ class role::grid::arc_condor {
       include setup_grid_accounts
       include grid_repos
       include arc_ce
-      include nagios
 #      include rsyslog
 }
