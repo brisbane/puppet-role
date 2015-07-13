@@ -14,6 +14,6 @@ class role::pp_local::pp_interactive {
   include egi_trustanchor
   include emiui
   include  yaim_conf::wlcg_voms
-#  include htcondor_simple
+  include htcondor_simple
 
 }
