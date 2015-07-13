@@ -1,7 +1,6 @@
 class role::pp_local {
-
-include common
 include ssh
+include common
 ensure_packages ( ['yum-utils'] )
 include "ganglia::client"
 include "yumbase"
