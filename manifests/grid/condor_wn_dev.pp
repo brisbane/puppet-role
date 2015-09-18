@@ -5,7 +5,7 @@ class role::grid::condor_wn_dev {
       class {'yaim_conf' : service_type => 'wn_condor' }
       include  yaim_conf::wlcg_voms
 #      include nfsclient
-      include cvmfs
+      include cvmfs_simple
       include grid_repos
       include cvmfs_auto_nagios
 }
